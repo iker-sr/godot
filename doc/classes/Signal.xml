@@ -186,7 +186,7 @@
 				for button in $Buttons.get_children():
 					button.pressed.connect(_on_pressed.bind(button))
 
-				func _on_pressed(button):
+				func _on_pressed(button: Button):
 					print(button.name, " was pressed")
 				[/codeblock]
 				[b]Note:[/b] If the [param callable]'s object is freed, the connection will be lost.
